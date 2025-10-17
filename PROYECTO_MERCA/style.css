@@ -1,0 +1,137 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;800;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: #2609ca;
+  background-image:  radial-gradient(#8d66e7 1.35px, transparent 1.35px), radial-gradient(#b0ddfc 1.35px, #6108d4 1.35px);
+  background-size: 54px 54px;
+  background-position: 0 0,27px 27px;
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  /*align-items: center; 
+  min-height: 100vh;
+}
+.form{
+ background-color: white;
+  margin: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(black / 30%);
+  text-align: center;
+}
+.form.active {
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+}
+
+.form-wrapper {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.form_tittle{
+  font-size: 2rem;
+  margin-bottom: 5.em;
+  color:purple
+}
+
+.form_paragraph{
+  font-weight: 300;
+}
+
+.form_link{
+  font-weight:400;
+  color:rgb(23, 20, 220)
+}
+
+.form_container{
+  margin-top:3em;
+  display:grid;
+  gap: 2.5em;
+}
+
+.form_group{
+  position:relative;
+  --color:rgb(131, 121, 120);
+}
+
+.form_input{
+ width: 100%;
+ background: none;
+ color: blue;
+ font-size: 1rem;
+ padding: .3em .6em;
+ border: none;
+ outline:none;
+ border-bottom: 1px solid var(--color);
+ font-family: "Roboto", sans-serif;
+}
+
+.form_input:not(:placeholder-shown){
+  color:rgb(90, 87, 87)
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+ transform: translateY(-12px) scale(.7);
+ transform-origin: left top;
+ color:rgb(25, 0, 255);
+}
+.form_label{
+color: var(--color);
+cursor: pointer;
+position: absolute;
+top: 0;
+left: 5px;
+transform: translateY(10px);
+transition: transform .5s, color .3s; 
+}
+
+.btn{
+background: rgb(151, 0, 189);
+color:azure;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-size: 1rem;
+padding: .8rem 0;
+border: none;
+border-radius: .5em;
+}
+
+.form_line{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1px;
+background-color:#3300eb;
+transform: scale(0);
+transform: left bottom;
+transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) ~ .form_line{
+transform: scale(1);
+}
+
+@media (max-width: 425px){
+
+  .form_tittle{
+    font-size: 1.8rem;
+  }
+}
