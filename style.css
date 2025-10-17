@@ -1,11 +1,9 @@
 
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;800;400&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;800;400&display=swap');
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 body{
   font-family: "Roboto", sans-serif;
@@ -14,8 +12,8 @@ body{
   background-size: 54px 54px;
   background-position: 0 0,27px 27px;
   display: flex;
-  justify-content: center;   /* Centra horizontalmente */
-  /*align-items: center; 
+  justify-content: center;  
+  align-items: center; 
   min-height: 100vh;
 }
 .form{
@@ -134,4 +132,5 @@ transform: scale(1);
   .form_tittle{
     font-size: 1.8rem;
   }
+
 }
